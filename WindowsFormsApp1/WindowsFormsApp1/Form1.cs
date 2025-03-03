@@ -26,5 +26,28 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void btnDangNhap_Click(object sender, EventArgs e)
+        {
+            string username = textboxUserName.Text;
+            string password = textboxpassword.Text;
+
+            // Kiểm tra tài khoản
+            if (username == "admin" && password == "admin")
+            {
+                MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                // Mở form chính (MainForm) sau khi đăng nhập thành công
+                Form2 mainForm = new Form2();
+                mainForm.Show();
+
+                // Ẩn form đăng nhập
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Sai tài khoản hoặc mật khẩu!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }
