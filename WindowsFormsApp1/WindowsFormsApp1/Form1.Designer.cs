@@ -40,9 +40,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(68, 86);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 16);
+            this.label1.Size = new System.Drawing.Size(98, 16);
             this.label1.TabIndex = 0;
-            this.label1.Text = "username";
+            this.label1.Text = "Tên đăng nhập";
             // 
             // txtUserName
             // 
@@ -56,9 +56,10 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(80, 124);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 16);
+            this.label2.Size = new System.Drawing.Size(61, 16);
             this.label2.TabIndex = 2;
-            this.label2.Text = "password";
+            this.label2.Text = "mật khẩu";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // txtpassword
             // 
