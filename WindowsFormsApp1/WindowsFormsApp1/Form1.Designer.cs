@@ -32,7 +32,7 @@
             this.txtUserName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtpassword = new System.Windows.Forms.TextBox();
-            this.btnLogin = new System.Windows.Forms.Button();
+            this.btnDangNhap = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -68,21 +68,21 @@
             this.txtpassword.Size = new System.Drawing.Size(100, 22);
             this.txtpassword.TabIndex = 3;
             // 
-            // btnLogin
+            // btnDangNhap
             // 
-            this.btnLogin.Location = new System.Drawing.Point(118, 190);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(81, 43);
-            this.btnLogin.TabIndex = 4;
-            this.btnLogin.Text = "login";
-            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnDangNhap.Location = new System.Drawing.Point(118, 190);
+            this.btnDangNhap.Name = "btnDangNhap";
+            this.btnDangNhap.Size = new System.Drawing.Size(81, 43);
+            this.btnDangNhap.TabIndex = 4;
+            this.btnDangNhap.Text = "Đăng Nhập";
+            this.btnDangNhap.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnLogin);
+            this.Controls.Add(this.btnDangNhap);
             this.Controls.Add(this.txtpassword);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtUserName);
@@ -100,7 +100,7 @@
         private System.Windows.Forms.TextBox txtUserName;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtpassword;
-        private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.Button btnDangNhap;
     }
 }
 
