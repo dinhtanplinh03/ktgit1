@@ -21,5 +21,10 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void txtpassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

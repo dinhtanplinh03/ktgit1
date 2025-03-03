@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.txtUserName = new System.Windows.Forms.TextBox();
+            this.textboxUserName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtpassword = new System.Windows.Forms.TextBox();
+            this.textboxpassword = new System.Windows.Forms.TextBox();
             this.btnDangNhap = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -44,12 +44,12 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Tên đăng nhập";
             // 
-            // txtUserName
+            // textboxUserName
             // 
-            this.txtUserName.Location = new System.Drawing.Point(186, 81);
-            this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(189, 22);
-            this.txtUserName.TabIndex = 1;
+            this.textboxUserName.Location = new System.Drawing.Point(186, 81);
+            this.textboxUserName.Name = "textboxUserName";
+            this.textboxUserName.Size = new System.Drawing.Size(189, 22);
+            this.textboxUserName.TabIndex = 1;
             // 
             // label2
             // 
@@ -61,12 +61,13 @@
             this.label2.Text = "mật khẩu";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // txtpassword
+            // textboxpassword
             // 
-            this.txtpassword.Location = new System.Drawing.Point(199, 124);
-            this.txtpassword.Name = "txtpassword";
-            this.txtpassword.Size = new System.Drawing.Size(100, 22);
-            this.txtpassword.TabIndex = 3;
+            this.textboxpassword.Location = new System.Drawing.Point(199, 124);
+            this.textboxpassword.Name = "textboxpassword";
+            this.textboxpassword.Size = new System.Drawing.Size(100, 22);
+            this.textboxpassword.TabIndex = 3;
+            this.textboxpassword.TextChanged += new System.EventHandler(this.txtpassword_TextChanged);
             // 
             // btnDangNhap
             // 
@@ -83,9 +84,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnDangNhap);
-            this.Controls.Add(this.txtpassword);
+            this.Controls.Add(this.textboxpassword);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtUserName);
+            this.Controls.Add(this.textboxUserName);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -97,9 +98,9 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtUserName;
+        private System.Windows.Forms.TextBox textboxUserName;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtpassword;
+        private System.Windows.Forms.TextBox textboxpassword;
         private System.Windows.Forms.Button btnDangNhap;
     }
 }
